@@ -1,0 +1,92 @@
+.rolesPage {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.rolesPage h1 {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.mindsetBlock {
+  background: linear-gradient(135deg, var(--surface), var(--surface2));
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--sap-blue);
+  border-radius: 0 12px 12px 0;
+  padding: 28px;
+  margin-bottom: 40px;
+}
+
+.mindsetQuote {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.mindsetSub {
+  font-size: 15px;
+  color: var(--text-dim);
+}
+
+.roleGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.roleCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px;
+  transition: all 0.2s;
+}
+
+.roleCard:hover {
+  border-color: var(--sap-blue);
+}
+
+.roleIcon {
+  font-size: 48px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.roleCard h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.roleFocus {
+  font-size: 14px;
+  color: var(--sap-blue);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.roleDesc {
+  font-size: 14px;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
+.ctaSection {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.ctaSection h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.ctaSection p {
+  color: var(--text-dim);
+}

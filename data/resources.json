@@ -1,0 +1,67 @@
+{
+  "resources": [
+    {
+      "id": "r1",
+      "topicId": "core-fundamentals",
+      "type": "formula",
+      "title": "BTP Architecture Layers",
+      "content": "BTP = Application Development + Integration + Data & Analytics + AI & Automation + Security & Connectivity\n\nEach layer has its own \"department\" with specific services."
+    },
+    {
+      "id": "r2",
+      "topicId": "application-development",
+      "type": "formula",
+      "title": "Development Options",
+      "content": "ABAP Environment → S/4 extensions (RAP)\nCloud Foundry / Kyma → Microservices (CAP)\nSAP Build Apps → No-code apps\n\nYou create behavior here."
+    },
+    {
+      "id": "r3",
+      "topicId": "integration",
+      "type": "formula",
+      "title": "Integration Services",
+      "content": "Integration Suite (CPI) → Process integration\nAPI Management → API gateway\nEvent Mesh → Event-driven architecture\n\nYou create communication here."
+    },
+    {
+      "id": "r4",
+      "topicId": "data-analytics",
+      "type": "formula",
+      "title": "Data & Analytics Stack",
+      "content": "HANA Cloud → In-memory database\nDatasphere → Data warehouse cloud\nAnalytics Cloud → BI & planning\n\nYou create decisions here."
+    },
+    {
+      "id": "r5",
+      "topicId": "security-governance",
+      "type": "formula",
+      "title": "Security & Connectivity",
+      "content": "Destination Service → Connectivity config\nCloud Connector → On-premise tunnel\nIAS / XSUAA → Identity & auth\n\nYou create trust here."
+    },
+    {
+      "id": "r6",
+      "topicId": "application-development",
+      "type": "formula",
+      "title": "AI & Automation",
+      "content": "Build Process Automation → Workflows\nAI Core → ML models\nJoule → AI copilot\n\nYou create intelligence here."
+    },
+    {
+      "id": "r7",
+      "topicId": "core-fundamentals",
+      "type": "example",
+      "title": "BTP Mindset",
+      "content": "SAP BTP is not one skill. It's architecture thinking.\n\nA developer builds a feature.\nA consultant configures a module.\nA BTP engineer designs how an enterprise runs."
+    },
+    {
+      "id": "r8",
+      "topicId": "extensibility",
+      "type": "formula",
+      "title": "S/4HANA Extension Types",
+      "content": "Side-by-side: BTP apps (ABAP, Cloud Foundry)\nKey User: Fiori personalization\nDeveloper: Custom logic, UI, fields\n\nAll without modifying core."
+    },
+    {
+      "id": "r9",
+      "topicId": "real-world-scenarios",
+      "type": "example",
+      "title": "Hybrid Connectivity",
+      "content": "Cloud Connector → Reverse proxy to on-premise\nDestination Service → Configure destinations\nBTP App → Uses destination to call S/4HANA\n\nNo firewall changes on-premise."
+    }
+  ]
+}

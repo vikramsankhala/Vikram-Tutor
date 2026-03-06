@@ -1,0 +1,60 @@
+{
+  "topics": [
+    {
+      "id": "core-fundamentals",
+      "title": "Core Fundamentals",
+      "shortDesc": "SAP BTP overview, architecture, services, and capabilities",
+      "priority": "highest",
+      "icon": "🏛️"
+    },
+    {
+      "id": "application-development",
+      "title": "Application Development",
+      "shortDesc": "Cloud-native apps with CAP, RAP, and SAP Build",
+      "priority": "highest",
+      "icon": "⚙️"
+    },
+    {
+      "id": "integration",
+      "title": "Integration",
+      "shortDesc": "Integration Suite, API management, event-driven architectures",
+      "priority": "high",
+      "icon": "🔗"
+    },
+    {
+      "id": "data-analytics",
+      "title": "Data & Analytics",
+      "shortDesc": "HANA Cloud, Datasphere, Analytics Cloud",
+      "priority": "high",
+      "icon": "📊"
+    },
+    {
+      "id": "security-governance",
+      "title": "Security & Governance",
+      "shortDesc": "Authentication, authorization, identity management",
+      "priority": "high",
+      "icon": "🔐"
+    },
+    {
+      "id": "extensibility",
+      "title": "Extensibility & Customization",
+      "shortDesc": "Extending S/4HANA and SuccessFactors with BTP",
+      "priority": "high",
+      "icon": "🔧"
+    },
+    {
+      "id": "operations-devops",
+      "title": "Operations & DevOps",
+      "shortDesc": "CI/CD pipelines, monitoring, logging, scaling",
+      "priority": "medium",
+      "icon": "🚀"
+    },
+    {
+      "id": "real-world-scenarios",
+      "title": "Real-World Scenarios",
+      "shortDesc": "Hybrid landscapes, multi-cloud, non-SAP integration",
+      "priority": "medium",
+      "icon": "🌍"
+    }
+  ]
+}

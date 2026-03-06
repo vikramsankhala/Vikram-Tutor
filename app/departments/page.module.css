@@ -1,0 +1,98 @@
+.departmentsPage {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.departmentsPage h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.pageDesc {
+  color: var(--text-dim);
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.departmentGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.departmentCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px;
+  transition: all 0.2s;
+}
+
+.departmentCard:hover {
+  border-color: var(--sap-blue);
+}
+
+.departmentHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.deptIcon {
+  font-size: 40px;
+}
+
+.departmentHeader h2 {
+  font-size: 22px;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+
+.tagline {
+  font-size: 14px;
+  color: var(--sap-blue);
+  font-style: italic;
+}
+
+.serviceList {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+.serviceList li {
+  padding: 8px 0;
+  padding-left: 20px;
+  position: relative;
+  color: var(--text-dim);
+  font-size: 14px;
+}
+
+.serviceList li::before {
+  content: '↳';
+  position: absolute;
+  left: 0;
+  color: var(--accent3);
+}
+
+.serviceList strong {
+  color: var(--text);
+}
+
+.outcome {
+  font-size: 14px;
+  color: var(--accent2);
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.learnLink {
+  font-size: 14px;
+  color: var(--sap-blue);
+  font-weight: 500;
+}
+
+.learnLink:hover {
+  text-decoration: underline;
+}

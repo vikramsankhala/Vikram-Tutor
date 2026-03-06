@@ -1,0 +1,58 @@
+{
+  "categories": [
+    {
+      "id": "finance-controlling",
+      "title": "Finance & Controlling",
+      "icon": "💰",
+      "modules": [
+        {
+          "id": "fi-assets",
+          "title": "Asset Accounting",
+          "description": "SAP Best Practices configuration guide for Asset Accounting. Covers organizational structures, chart of depreciation, asset classes, depreciation areas, G/L integration, and configuration steps.",
+          "pdf": "/simple-sap/fi-assets/Asset-Accounting.pdf",
+          "pages": "~94",
+          "source": "SAP Best Practices"
+        },
+        {
+          "id": "fi-ap-ar",
+          "title": "Vendor Integration",
+          "description": "SAP S/4HANA Cookbook on Customer/Vendor Integration (CVI). Topics: Business Partner, CVI conversion, Fiori apps for customer/vendor master, migration, synchronization cockpit, post-processing.",
+          "pdf": "/simple-sap/fi-ap-ar/Vendor-Integration.pdf",
+          "pages": "~89",
+          "source": "SAP S/4HANA Cookbook"
+        },
+        {
+          "id": "fi-mm",
+          "title": "FI – MM Integration",
+          "description": "Training material on FI–MM integration. Explains Material Master, Valuation Class, Movement Types, transaction keys (BSX), automatic posting configuration (OBYC), GR/IR, and accounting entries for MM movements.",
+          "pdf": "/simple-sap/fi-mm/FI-MM-Integration.pdf",
+          "pages": "~26",
+          "source": "Zarantech"
+        },
+        {
+          "id": "ps",
+          "title": "Project System (PS)",
+          "description": "SAP PS Handbook covering organization, integration, configuration, Project Builder, Planning Board, ProMan, transaction codes, reports, tables, and IMG.",
+          "pdf": "/simple-sap/ps/PS-Handbook.pdf",
+          "pages": "~327",
+          "source": "Kieron Dowling"
+        }
+      ]
+    },
+    {
+      "id": "supply-chain",
+      "title": "Supply Chain",
+      "icon": "📦",
+      "modules": [
+        {
+          "id": "sd",
+          "title": "Sales & Distribution (SD)",
+          "description": "SAP SD training material. Covers enterprise structure, master data, sales documents, pricing, account determination, billing, contracts, consignment, credit management, intercompany sales, third-party sales, make-to-order, variant configuration, deliveries, and warehouse management.",
+          "pdf": "/simple-sap/sd/SAP-SD.pdf",
+          "pages": "~363",
+          "source": "SAP Training"
+        }
+      ]
+    }
+  ]
+}

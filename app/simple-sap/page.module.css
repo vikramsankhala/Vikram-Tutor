@@ -1,0 +1,113 @@
+.simpleSapPage {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.simpleSapPage h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.pageDesc {
+  color: var(--text-dim);
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.categoryList {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.categorySection h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.categoryIcon {
+  font-size: 28px;
+}
+
+.moduleGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.moduleCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.2s;
+}
+
+.moduleCard:hover {
+  border-color: var(--sap-blue);
+}
+
+.moduleCard h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.moduleDesc {
+  font-size: 14px;
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.moduleMeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-dimmer);
+  margin-bottom: 16px;
+}
+
+.source {
+  color: var(--accent3);
+}
+
+.downloadBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--sap-blue);
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.downloadBtn:hover {
+  background: rgba(0, 112, 242, 0.15);
+  border-color: var(--sap-blue);
+}
+
+.btpLink {
+  margin-top: 48px;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.btpLink p {
+  color: var(--text-dim);
+  font-size: 14px;
+}
+
+.btpLink a {
+  color: var(--sap-blue);
+}
