@@ -62,6 +62,41 @@
       "type": "example",
       "title": "Hybrid Connectivity",
       "content": "Cloud Connector → Reverse proxy to on-premise\nDestination Service → Configure destinations\nBTP App → Uses destination to call S/4HANA\n\nNo firewall changes on-premise."
+    },
+    {
+      "id": "r10",
+      "topicId": "application-development",
+      "type": "code",
+      "title": "CAP Init & Deploy",
+      "content": "cds init my-app\ncd my-app\ncds watch          # local\ncf push             # Cloud Foundry"
+    },
+    {
+      "id": "r11",
+      "topicId": "application-development",
+      "type": "formula",
+      "title": "XSUAA Binding",
+      "content": "Bind xsuaa service to app for auth.\nUse @sap/xssec (Node) or spring-security (Java).\nJWT contains user, scopes, roles."
+    },
+    {
+      "id": "r12",
+      "topicId": "operations-devops",
+      "type": "code",
+      "title": "CF Deploy Commands",
+      "content": "cf login\ncf target -o <org> -s <space>\ncf push\ncf logs <app> --recent"
+    },
+    {
+      "id": "r13",
+      "topicId": "operations-devops",
+      "type": "formula",
+      "title": "Release Strategies",
+      "content": "Blue-Green: Deploy alongside, switch traffic, instant rollback\nRolling: cf push --strategy rolling, zero-downtime\nCanary: Route fraction to new version first"
+    },
+    {
+      "id": "r14",
+      "topicId": "operations-devops",
+      "type": "code",
+      "title": "CF Scale & Logs",
+      "content": "cf scale <app> -i 3 -m 512M\ncf logs <app> --recent\ncf env <app>"
     }
   ]
 }

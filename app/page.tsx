@@ -38,6 +38,22 @@ export default function Home() {
         <section className={styles.features}>
           <h2>What&apos;s Inside</h2>
           <div className={styles.featureGrid}>
+            <Link href="/developers" className={styles.featureCard}>
+              <span className={styles.cardIcon}>👨‍💻</span>
+              <h3>SAP Developers</h3>
+              <p>
+                Tools, frameworks, APIs, security, CI/CD. CAP, RAP, Cloud Foundry,
+                BAS, and quick reference for BTP development.
+              </p>
+            </Link>
+            <Link href="/devops" className={styles.featureCard}>
+              <span className={styles.cardIcon}>🚀</span>
+              <h3>SAP DevOps</h3>
+              <p>
+                CI/CD pipelines, build & deploy, monitoring, logging, scaling.
+                Project Piper, Cloud Foundry ops, and release strategies.
+              </p>
+            </Link>
             <Link href="/topics" className={styles.featureCard}>
               <span className={styles.cardIcon}>📚</span>
               <h3>Topic Notes</h3>
@@ -61,6 +77,14 @@ export default function Home() {
               <p>
                 Understand the BTP mindset. Developer, consultant, or BTP
                 engineer—each designs how an enterprise runs.
+              </p>
+            </Link>
+            <Link href="/sandbox" className={styles.featureCard}>
+              <span className={styles.cardIcon}>🧪</span>
+              <h3>Development Sandbox</h3>
+              <p>
+                Run JavaScript CAP patterns and edit DevOps YAML in your browser.
+                Tutorials for SAP Developers and SAP DevOps.
               </p>
             </Link>
             <Link href="/library" className={styles.featureCard}>

@@ -1,0 +1,85 @@
+.sandboxPage {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.sandboxPage h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.pageDesc {
+  color: var(--text-dim);
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.sandboxWrapper {
+  margin-bottom: 32px;
+}
+
+.sandboxTips {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.sandboxTips h3 {
+  font-size: 16px;
+  margin: 20px 0 12px 0;
+  color: var(--sap-blue);
+}
+
+.sandboxTips h3:first-child {
+  margin-top: 0;
+}
+
+.sandboxTips ul {
+  padding-left: 20px;
+  color: var(--text-dim);
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.sandboxTips li {
+  margin-bottom: 6px;
+}
+
+.sandboxTips code {
+  background: var(--surface2);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.tipNote {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--text-dimmer);
+  font-style: italic;
+}
+
+.related {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.related a {
+  padding: 10px 20px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--sap-blue);
+}
+
+.related a:hover {
+  border-color: var(--sap-blue);
+}

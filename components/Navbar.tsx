@@ -6,11 +6,14 @@ import styles from './Navbar.module.css';
 
 const navItems = [
   { href: '/', label: 'Home', icon: '🏠' },
+  { href: '/developers', label: 'Developers', icon: '👨‍💻' },
+  { href: '/devops', label: 'DevOps', icon: '🚀' },
   { href: '/topics', label: 'Topics', icon: '📚' },
   { href: '/departments', label: 'Departments', icon: '🏢' },
   { href: '/roles', label: 'Roles', icon: '👤' },
   { href: '/simple-sap', label: 'SImple SAP', icon: '📄' },
   { href: '/library', label: 'Resource Library', icon: '📖' },
+  { href: '/sandbox', label: 'Sandbox', icon: '🧪' },
 ];
 
 export default function Navbar() {
