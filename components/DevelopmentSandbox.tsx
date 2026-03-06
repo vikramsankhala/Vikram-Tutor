@@ -82,6 +82,25 @@ function hasScope(jwt, scope) {
 console.log('User:', mockJWT.user_name);
 console.log('Has CatalogService.Read:', hasScope(mockJWT, 'CatalogService.Read'));
 `,
+  'cap-handler-full': `// CAP Service Handler - BEFORE, ON, AFTER (Study Notes)
+// Handler order: BEFORE -> ON -> AFTER
+
+const books = [{ ID: 1, title: 'CAP Guide', stock: 50 }];
+
+function beforeCreate(req) {
+  if (!req.data.bookID) throw new Error('bookID required');
+  if (req.data.qty <= 0) throw new Error('qty must be positive');
+}
+
+function onRead(books) {
+  return books.map(b => ({ ...b, discount: b.stock > 100 ? '10%' : null }));
+}
+
+const mockReq = { data: { bookID: 1, qty: 2 } };
+beforeCreate(mockReq);
+const enriched = onRead(books);
+console.log('Enriched books:', enriched);
+`,
 };
 
 // SAP DevOps templates - YAML (edit & copy)
@@ -181,6 +200,77 @@ cf logs my-app --recent
 
 # List apps
 cf apps
+`,
+  'mta-yaml': `# mta.yaml - CAP + Fiori Approuter (Study Notes)
+_schema-version: '3.3.0'
+ID: my-bookshop
+version: 1.0.0
+
+modules:
+  - name: bookshop-srv
+    type: nodejs
+    path: gen/srv
+    parameters:
+      memory: 256M
+    requires:
+      - name: bookshop-db
+      - name: bookshop-xsuaa
+      - name: bookshop-dest
+    provides:
+      - name: srv-api
+        properties:
+          srv-url: \$\{default-url\}
+
+  - name: bookshop-db-deployer
+    type: hdb
+    path: gen/db
+    requires:
+      - name: bookshop-db
+
+  - name: bookshop-approuter
+    type: approuter.nodejs
+    path: app/router
+    requires:
+      - name: srv-api
+        group: destinations
+        properties:
+          name: srv-api
+          url: ~{srv-url}
+          forwardAuthToken: true
+      - name: bookshop-xsuaa
+
+resources:
+  - name: bookshop-db
+    type: com.sap.xs.hdi-container
+    parameters:
+      service: hana
+      service-plan: hdi-shared
+  - name: bookshop-xsuaa
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: xsuaa
+      service-plan: application
+      path: ./xs-security.json
+  - name: bookshop-dest
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: destination
+      service-plan: lite
+`,
+  'xs-security': `{
+  "xsappname": "my-bookshop",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    { "name": "$XSAPPNAME.read", "description": "Read catalogue" },
+    { "name": "$XSAPPNAME.write", "description": "Create and update books" },
+    { "name": "$XSAPPNAME.admin", "description": "Full administrative access" }
+  ],
+  "role-templates": [
+    { "name": "Viewer", "scope-references": ["$XSAPPNAME.read"] },
+    { "name": "Editor", "scope-references": ["$XSAPPNAME.read","$XSAPPNAME.write"] },
+    { "name": "Admin", "scope-references": ["$XSAPPNAME.read","$XSAPPNAME.write","$XSAPPNAME.admin"] }
+  ]
+}
 `,
 };
 

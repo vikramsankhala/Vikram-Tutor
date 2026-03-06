@@ -162,3 +162,13 @@
   transform: scale(1.02);
   box-shadow: 0 4px 20px rgba(0, 112, 242, 0.4);
 }
+
+.creditsNote {
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--text-dimmer);
+}
+
+.creditsNote a {
+  color: var(--sap-blue);
+}

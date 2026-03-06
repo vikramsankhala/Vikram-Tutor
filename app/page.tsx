@@ -87,6 +87,30 @@ export default function Home() {
                 Tutorials for SAP Developers and SAP DevOps.
               </p>
             </Link>
+            <Link href="/schedule" className={styles.featureCard}>
+              <span className={styles.cardIcon}>📅</span>
+              <h3>Book a Session</h3>
+              <p>
+                Schedule a consultation. Calendar + Google Meet with recording,
+                transcription, and real-time translation.
+              </p>
+            </Link>
+            <Link href="/register" className={styles.featureCard}>
+              <span className={styles.cardIcon}>📥</span>
+              <h3>Study Notes Download</h3>
+              <p>
+                Register to download SAP Developer & DevOps Study Notes (docx).
+                CAP, RAP, Fiori, CI/CD, MTA, and more.
+              </p>
+            </Link>
+            <Link href="/quick-reference" className={styles.featureCard}>
+              <span className={styles.cardIcon}>📋</span>
+              <h3>Quick Reference</h3>
+              <p>
+                Cheatsheets, key facts, acronyms. CAP, RAP, DevOps exam tips
+                from SAP Developer & DevOps Study Notes.
+              </p>
+            </Link>
             <Link href="/library" className={styles.featureCard}>
               <span className={styles.cardIcon}>📖</span>
               <h3>Resource Library</h3>
@@ -110,14 +134,16 @@ export default function Home() {
           <h2>Topics at a Glance</h2>
           <div className={styles.topicPills}>
             {[
-              { id: 'core-fundamentals', title: 'Core Fundamentals', priority: 'pillHighest' },
-              { id: 'application-development', title: 'App Development', priority: 'pillHighest' },
-              { id: 'integration', title: 'Integration', priority: 'pillHigh' },
-              { id: 'data-analytics', title: 'Data & Analytics', priority: 'pillHigh' },
-              { id: 'security-governance', title: 'Security', priority: 'pillHigh' },
-              { id: 'extensibility', title: 'Extensibility', priority: 'pillHigh' },
-              { id: 'operations-devops', title: 'DevOps', priority: 'pillMedium' },
-              { id: 'real-world-scenarios', title: 'Real-World', priority: 'pillMedium' },
+              { id: 'cap-framework', title: 'CAP', priority: 'pillHighest' },
+              { id: 'rap-abap-cloud', title: 'RAP', priority: 'pillHighest' },
+              { id: 'fiori-ui5', title: 'Fiori', priority: 'pillHigh' },
+              { id: 'btp-security', title: 'Security', priority: 'pillHigh' },
+              { id: 'cicd-btp', title: 'CI/CD', priority: 'pillHigh' },
+              { id: 'mta-deployment', title: 'MTA', priority: 'pillHigh' },
+              { id: 'transport-alm', title: 'Transport', priority: 'pillMedium' },
+              { id: 'monitoring-ops', title: 'Monitoring', priority: 'pillMedium' },
+              { id: 'architecture-patterns', title: 'Architecture', priority: 'pillMedium' },
+              { id: 'quick-reference', title: 'Quick Ref', priority: 'pillHigh' },
             ].map((t) => (
               <Link
                 key={t.id}
@@ -134,6 +160,9 @@ export default function Home() {
           <Link href="/topics" className={styles.ctaBtn}>
             Start Learning →
           </Link>
+          <p className={styles.creditsNote}>
+            By <Link href="/about">Vikram Singh Sankhala</Link>
+          </p>
         </section>
       </main>
     </>

@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 export const metadata: Metadata = {
   title: 'SAP BTP Companion',
@@ -13,7 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+        <div style={{ flex: 1 }}>{children}</div>
+        <Footer />
+        <WhatsAppButton />
+      </body>
     </html>
   );
 }

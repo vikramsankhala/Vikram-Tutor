@@ -1,0 +1,103 @@
+.quickRefPage {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.quickRefPage h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.pageDesc {
+  color: var(--text-dim);
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: var(--sap-blue);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.refTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.refTable th,
+.refTable td {
+  padding: 10px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.refTable th {
+  background: var(--surface2);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.refTable td {
+  color: var(--text-dim);
+}
+
+.refTable tr:last-child td {
+  border-bottom: none;
+}
+
+.acronymGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.acronymGrid span {
+  padding: 10px 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.acronymGrid strong {
+  color: var(--sap-blue);
+  margin-right: 8px;
+}
+
+.related {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.related a {
+  padding: 8px 16px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--sap-blue);
+}
+
+.related a:hover {
+  border-color: var(--sap-blue);
+}

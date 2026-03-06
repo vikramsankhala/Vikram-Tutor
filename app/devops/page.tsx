@@ -267,9 +267,15 @@ cf logs <app> | grep ERROR`}</pre>
         <section className={styles.related}>
           <h3>Related</h3>
           <div className={styles.relatedLinks}>
-            <Link href="/topics/operations-devops">Operations & DevOps Topic</Link>
+            <Link href="/topics/s4hana-cloud">S/4HANA Cloud</Link>
+            <Link href="/topics/basis">SAP Basis</Link>
+            <Link href="/topics/cicd-btp">CI/CD on BTP</Link>
+            <Link href="/topics/mta-deployment">MTA & Deployment</Link>
+            <Link href="/topics/transport-alm">Transport & ALM</Link>
+            <Link href="/topics/monitoring-ops">Monitoring & Ops</Link>
+            <Link href="/topics/architecture-patterns">Architecture Patterns</Link>
+            <Link href="/quick-reference">Quick Reference</Link>
             <Link href="/developers">SAP Developers</Link>
-            <Link href="/topics/security-governance">Security & Governance</Link>
             <Link href="/departments">Departments</Link>
           </div>
         </section>

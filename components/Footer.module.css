@@ -1,0 +1,38 @@
+.footer {
+  margin-top: auto;
+  padding: 24px 32px;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+.footerContent {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.credits {
+  font-size: 14px;
+  color: var(--text-dim);
+  margin-bottom: 12px;
+}
+
+.credits a {
+  color: var(--sap-blue);
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  font-size: 13px;
+}
+
+.contact a {
+  color: var(--text-dimmer);
+}
+
+.contact a:hover {
+  color: var(--sap-blue);
+}

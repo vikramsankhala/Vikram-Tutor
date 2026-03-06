@@ -228,9 +228,16 @@ cds build`}</pre>
         <section className={styles.related}>
           <h3>Related</h3>
           <div className={styles.relatedLinks}>
-            <Link href="/topics/application-development">Application Development Topic</Link>
-            <Link href="/topics/operations-devops">Operations & DevOps</Link>
-            <Link href="/topics/security-governance">Security & Governance</Link>
+            <Link href="/topics/cap-framework">CAP Framework</Link>
+            <Link href="/topics/development-tools">SAP Development Tools</Link>
+            <Link href="/topics/low-code-signavio">Low Code & Signavio</Link>
+            <Link href="/topics/abap">ABAP</Link>
+            <Link href="/topics/rap-abap-cloud">RAP & ABAP Cloud</Link>
+            <Link href="/topics/fiori-ui5">Fiori & UI5</Link>
+            <Link href="/topics/btp-security">BTP Security</Link>
+            <Link href="/topics/ai-development">AI Development</Link>
+            <Link href="/topics/s4hana-cloud">S/4HANA Cloud</Link>
+            <Link href="/quick-reference">Quick Reference</Link>
             <Link href="/departments">Departments</Link>
           </div>
         </section>

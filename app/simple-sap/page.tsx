@@ -50,7 +50,8 @@ export default function SimpleSapPage() {
         <section className={styles.btpLink}>
           <p>
             BTP extends S/4HANA. Explore how these modules connect with{' '}
-            <Link href="/topics/extensibility">Extensibility & Customization</Link>.
+            <Link href="/topics/extensibility">Extensibility & Customization</Link> and{' '}
+            <Link href="/topics/s4hana-cloud">S/4HANA Cloud</Link> (deployment, configuration, customisation).
           </p>
         </section>
       </main>

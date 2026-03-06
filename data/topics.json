@@ -1,6 +1,76 @@
 {
   "topics": [
     {
+      "id": "cap-framework",
+      "title": "CAP Framework",
+      "shortDesc": "Project structure, CDS modeling, service handlers, auth, MTX, extensibility",
+      "priority": "highest",
+      "icon": "📦"
+    },
+    {
+      "id": "rap-abap-cloud",
+      "title": "RAP & ABAP Cloud",
+      "shortDesc": "Business objects, BDEFs, managed/unmanaged, feature controls, ABAP Cloud restrictions",
+      "priority": "highest",
+      "icon": "📋"
+    },
+    {
+      "id": "fiori-ui5",
+      "title": "SAP Fiori & UI5",
+      "shortDesc": "Floor plans, OData annotations, SAPUI5 lifecycle, Flexible Programming Model",
+      "priority": "high",
+      "icon": "📱"
+    },
+    {
+      "id": "btp-security",
+      "title": "BTP Security",
+      "shortDesc": "XSUAA, OAuth2, JWT, scopes, IAS, principal propagation, Cloud Connector",
+      "priority": "high",
+      "icon": "🔐"
+    },
+    {
+      "id": "cicd-btp",
+      "title": "CI/CD on BTP",
+      "shortDesc": "SAP CI/CD Service, Project Piper, GitHub Actions, pipeline stages, quality gates",
+      "priority": "high",
+      "icon": "🔄"
+    },
+    {
+      "id": "mta-deployment",
+      "title": "MTA & Deployment",
+      "shortDesc": "mta.yaml deep dive, mbt commands, CF CLI operations, Kyma deployment",
+      "priority": "high",
+      "icon": "🚀"
+    },
+    {
+      "id": "transport-alm",
+      "title": "Transport & ALM",
+      "shortDesc": "Cloud Transport Management, Cloud ALM, change management, release governance",
+      "priority": "medium",
+      "icon": "📤"
+    },
+    {
+      "id": "monitoring-ops",
+      "title": "Monitoring & Ops",
+      "shortDesc": "Alert Notification, Application Logging, Cloud ALM health, Dynatrace, Audit Log",
+      "priority": "medium",
+      "icon": "📊"
+    },
+    {
+      "id": "architecture-patterns",
+      "title": "Architecture Patterns",
+      "shortDesc": "Event-driven, microservices, side-by-side extensions, hybrid landscapes",
+      "priority": "medium",
+      "icon": "🏗️"
+    },
+    {
+      "id": "quick-reference",
+      "title": "Quick Reference",
+      "shortDesc": "Cheatsheets, command reference, decision tables, exam tips",
+      "priority": "high",
+      "icon": "📋"
+    },
+    {
       "id": "core-fundamentals",
       "title": "Core Fundamentals",
       "shortDesc": "SAP BTP overview, architecture, services, and capabilities",
@@ -41,6 +111,48 @@
       "shortDesc": "Extending S/4HANA and SuccessFactors with BTP",
       "priority": "high",
       "icon": "🔧"
+    },
+    {
+      "id": "s4hana-cloud",
+      "title": "S/4HANA Cloud",
+      "shortDesc": "Deployment, configuration, and customisation for S/4HANA Cloud Public Edition",
+      "priority": "high",
+      "icon": "☁️"
+    },
+    {
+      "id": "abap",
+      "title": "ABAP",
+      "shortDesc": "ABAP language, Data Dictionary, internal tables, Open SQL, ABAP Objects, classic vs Cloud",
+      "priority": "high",
+      "icon": "💻"
+    },
+    {
+      "id": "basis",
+      "title": "SAP Basis",
+      "shortDesc": "System administration, user management, transport, performance, background jobs, locks",
+      "priority": "medium",
+      "icon": "⚙️"
+    },
+    {
+      "id": "ai-development",
+      "title": "AI Development in SAP",
+      "shortDesc": "AI Core, AI Business Services, Joule, generative AI, ML lifecycle, responsible AI",
+      "priority": "high",
+      "icon": "🤖"
+    },
+    {
+      "id": "development-tools",
+      "title": "SAP Development Tools",
+      "shortDesc": "BAS, ADT, SAP Build, VS Code, cds CLI, Fiori tools, MDK, Git integration",
+      "priority": "high",
+      "icon": "🛠️"
+    },
+    {
+      "id": "low-code-signavio",
+      "title": "Low Code, No Code & Signavio",
+      "shortDesc": "SAP Build Apps, Process Automation, RPA, Signavio Process Intelligence, process mining",
+      "priority": "high",
+      "icon": "📐"
     },
     {
       "id": "operations-devops",

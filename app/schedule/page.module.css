@@ -1,0 +1,108 @@
+.schedulePage {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.schedulePage h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.desc {
+  color: var(--text-dim);
+  margin-bottom: 32px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.embedSection {
+  margin-bottom: 48px;
+}
+
+.embedWrapper {
+  min-height: 630px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.embedWrapper iframe {
+  display: block;
+}
+
+
+.features h2 {
+  font-size: 22px;
+  margin-bottom: 24px;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.featureCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.featureCard .icon {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.featureCard h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: var(--sap-blue);
+}
+
+.featureCard p {
+  font-size: 14px;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+
+.alternatives {
+  margin-top: 40px;
+  padding: 24px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.alternatives h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.alternatives p {
+  font-size: 14px;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
+.alternatives a {
+  color: var(--sap-blue);
+}
+
+.backLink {
+  display: inline-block;
+  margin-top: 32px;
+  font-size: 14px;
+  color: var(--text-dim);
+}
+
+.backLink:hover {
+  color: var(--sap-blue);
+}

@@ -57,6 +57,83 @@
       "content": "Side-by-side: BTP apps (ABAP, Cloud Foundry)\nKey User: Fiori personalization\nDeveloper: Custom logic, UI, fields\n\nAll without modifying core."
     },
     {
+      "id": "r20",
+      "topicId": "s4hana-cloud",
+      "type": "formula",
+      "title": "S/4HANA Cloud Landscapes",
+      "content": "2-System: Prod + Quality; CBC config; Quality → Prod transport\n3-System: Prod + Test + Dev; Dev extensibility; Dev → Test → Prod transport\nStarter System: Initial project phases (SAP Activate)"
+    },
+    {
+      "id": "r21",
+      "topicId": "s4hana-cloud",
+      "type": "formula",
+      "title": "S/4HANA Cloud Configuration",
+      "content": "SAP Central Business Configuration (CBC) replaces Manage Your Solution\nWorkspaces → Scope → Organisational structure → Product-specific values\nTransport: Mandatory/Recommended/Optional activities"
+    },
+    {
+      "id": "r22",
+      "topicId": "abap",
+      "type": "formula",
+      "title": "ABAP Environments",
+      "content": "Classic ABAP: Full access; Dynpro; direct tables; function modules\nABAP Cloud: Released APIs only; CDS; RAP; upgrade-stable"
+    },
+    {
+      "id": "r23",
+      "topicId": "abap",
+      "type": "code",
+      "title": "Internal Table Types",
+      "content": "STANDARD: Linear, APPEND\nSORTED: Binary search, key\nHASHED: Key access, unique"
+    },
+    {
+      "id": "r24",
+      "topicId": "basis",
+      "type": "formula",
+      "title": "Basis Key Transactions",
+      "content": "SU01: Users | PFCG: Roles | SU53: Auth check\nSTMS: Transport | SE09: Change requests\nSM37: Jobs | SP01: Spool | SM12: Locks"
+    },
+    {
+      "id": "r25",
+      "topicId": "ai-development",
+      "type": "formula",
+      "title": "SAP AI Stack",
+      "content": "AI Core: Custom ML; scenarios; train → deploy → REST\nAI Business Services: Pre-built APIs (Document IE, BER)\nJoule: Copilot embedded in SAP apps"
+    },
+    {
+      "id": "r26",
+      "topicId": "ai-development",
+      "type": "example",
+      "title": "AI Integration Flow",
+      "content": "1. Enable AI service in BTP\n2. Bind or create destination\n3. Call REST API with OAuth2\n4. Integrate response into business flow"
+    },
+    {
+      "id": "r27",
+      "topicId": "development-tools",
+      "type": "formula",
+      "title": "SAP Dev Tool Choice",
+      "content": "CAP on BTP: BAS or VS Code + cds CLI\nRAP/ABAP Cloud: ADT (Eclipse/BAS)\nNo-code: SAP Build Apps\nIntegration: Integration Suite (CPI)"
+    },
+    {
+      "id": "r28",
+      "topicId": "development-tools",
+      "type": "code",
+      "title": "cds CLI Commands",
+      "content": "cds init\ncds add hana | mta | multitenancy\ncds watch\ncds deploy\ncds build"
+    },
+    {
+      "id": "r29",
+      "topicId": "low-code-signavio",
+      "type": "formula",
+      "title": "Low Code vs No Code",
+      "content": "No-code: Build Apps, Process Automation (business users)\nLow-code: Fiori Elements, CPI, Build Code (developers)\nFull-code: CAP, RAP, ABAP"
+    },
+    {
+      "id": "r30",
+      "topicId": "low-code-signavio",
+      "type": "formula",
+      "title": "Signavio & Build Loop",
+      "content": "Process Intelligence (mining) → Recommendations\nProcess Manager (BPMN) → Import to Build\nBuild Process Automation → Execute workflows"
+    },
+    {
       "id": "r9",
       "topicId": "real-world-scenarios",
       "type": "example",
@@ -97,6 +174,41 @@
       "type": "code",
       "title": "CF Scale & Logs",
       "content": "cf scale <app> -i 3 -m 512M\ncf logs <app> --recent\ncf env <app>"
+    },
+    {
+      "id": "r15",
+      "topicId": "cap-framework",
+      "type": "formula",
+      "title": "CAP Handler Order",
+      "content": "BEFORE -> ON -> AFTER\n\nBEFORE: Input validation, auth checks\nON: Replace default DB operation\nAFTER: Enrich result, post-processing"
+    },
+    {
+      "id": "r16",
+      "topicId": "rap-abap-cloud",
+      "type": "formula",
+      "title": "RAP BDEF Keywords",
+      "content": "managed implementation: Auto CRUD\nlock master: Pessimistic locking\netag master: Optimistic locking\ndraft: Save incomplete data\nfeature control: Enable/disable per instance"
+    },
+    {
+      "id": "r17",
+      "topicId": "mta-deployment",
+      "type": "formula",
+      "title": "mta.yaml Rules",
+      "content": "modules = deployable units (apps, DB deployers)\nresources = backing services (HANA, XSUAA)\nrequires = dependency\nprovides = exposes property via ~{}"
+    },
+    {
+      "id": "r18",
+      "topicId": "transport-alm",
+      "type": "example",
+      "title": "cTMS Separation",
+      "content": "Developer: Creates transport requests via pipeline\nOperations: Approves and imports to Test/Production\n\nPrevents unauthorised production changes."
+    },
+    {
+      "id": "r19",
+      "topicId": "quick-reference",
+      "type": "formula",
+      "title": "Conventional Commits",
+      "content": "feat: Minor bump | fix: Patch | chore: No bump\nBREAKING CHANGE: Major bump (in footer)"
     }
   ]
 }

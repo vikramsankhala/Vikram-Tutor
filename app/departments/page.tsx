@@ -17,6 +17,19 @@ const departments = [
     topicId: 'application-development',
   },
   {
+    id: 'low-code',
+    title: 'Low Code & Process',
+    tagline: 'You build without coding',
+    icon: '📐',
+    services: [
+      { name: 'SAP Build Apps', desc: 'No-code apps' },
+      { name: 'Build Process Automation', desc: 'Workflows, RPA' },
+      { name: 'Signavio', desc: 'Process intelligence' },
+    ],
+    outcome: 'You create solutions here.',
+    topicId: 'low-code-signavio',
+  },
+  {
     id: 'integration',
     title: 'Integration',
     tagline: 'You make systems talk',
@@ -53,7 +66,7 @@ const departments = [
       { name: 'Joule', desc: 'AI copilot' },
     ],
     outcome: 'You create intelligence here.',
-    topicId: 'application-development',
+    topicId: 'ai-development',
   },
   {
     id: 'security-connectivity',

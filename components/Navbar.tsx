@@ -14,6 +14,10 @@ const navItems = [
   { href: '/simple-sap', label: 'SImple SAP', icon: '📄' },
   { href: '/library', label: 'Resource Library', icon: '📖' },
   { href: '/sandbox', label: 'Sandbox', icon: '🧪' },
+  { href: '/quick-reference', label: 'Quick Ref', icon: '📋' },
+  { href: '/schedule', label: 'Book Session', icon: '📅' },
+  { href: '/register', label: 'Download Study Notes', icon: '📥' },
+  { href: '/about', label: 'About', icon: '👤' },
 ];
 
 export default function Navbar() {
