@@ -119,9 +119,9 @@ export default function Home() {
                 patterns. Filter by topic.
               </p>
             </Link>
-            <Link href="/simple-sap" className={styles.featureCard}>
+            <Link href="/summary-section" className={styles.featureCard}>
               <span className={styles.cardIcon}>📄</span>
-              <h3>SImple SAP</h3>
+              <h3>Summary Section</h3>
               <p>
                 S/4HANA training PDFs: FI (Asset Accounting, Vendor Integration,
                 FI–MM), PS, and SD. Download for offline study.

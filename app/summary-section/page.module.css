@@ -1,10 +1,10 @@
-.simpleSapPage {
+.summarySectionPage {
   max-width: 1000px;
   margin: 0 auto;
   padding: 40px 24px;
 }
 
-.simpleSapPage h1 {
+.summarySectionPage h1 {
   font-size: 32px;
   margin-bottom: 8px;
 }

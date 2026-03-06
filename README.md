@@ -45,7 +45,7 @@ Open [http://localhost:3000](http://localhost:3000).
 Content is based on:
 - `BTP.txt` — BTP overview and department metaphor
 - `SAP_Developer_DevOps_Study_Notes.docx` — CAP, RAP, Fiori, Security, CI/CD, MTA, Transport, Monitoring, Architecture
-- SImple SAP — S/4HANA training PDFs (FI, PS, SD)
+- Summary Section — S/4HANA training PDFs (FI, PS, SD)
 
 ## Tech Stack
 

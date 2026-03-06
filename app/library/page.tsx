@@ -97,18 +97,18 @@ export default function LibraryPage() {
           <h3>S/4HANA Module References</h3>
           <p className={styles.s4Desc}>
             BTP extends S/4HANA. Download training PDFs from the{' '}
-            <Link href="/simple-sap">SImple SAP</Link> collection.
+            <Link href="/summary-section">Summary Section</Link> collection.
           </p>
           <div className={styles.s4Grid}>
-            <Link href="/simple-sap" className={styles.s4Card}>
+            <Link href="/summary-section" className={styles.s4Card}>
               <strong>FI (Finance)</strong>
               <span>Asset Accounting, AP & AR, Vendor Integration, FI–MM</span>
             </Link>
-            <Link href="/simple-sap" className={styles.s4Card}>
+            <Link href="/summary-section" className={styles.s4Card}>
               <strong>PS (Project System)</strong>
               <span>Project management, planning, execution</span>
             </Link>
-            <Link href="/simple-sap" className={styles.s4Card}>
+            <Link href="/summary-section" className={styles.s4Card}>
               <strong>SD (Sales & Distribution)</strong>
               <span>Order-to-cash, sales processes</span>
             </Link>

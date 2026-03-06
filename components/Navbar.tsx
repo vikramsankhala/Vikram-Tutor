@@ -11,7 +11,7 @@ const navItems = [
   { href: '/topics', label: 'Topics', icon: '📚' },
   { href: '/departments', label: 'Departments', icon: '🏢' },
   { href: '/roles', label: 'Roles', icon: '👤' },
-  { href: '/simple-sap', label: 'SImple SAP', icon: '📄' },
+  { href: '/summary-section', label: 'Summary Section', icon: '📄' },
   { href: '/library', label: 'Resource Library', icon: '📖' },
   { href: '/sandbox', label: 'Sandbox', icon: '🧪' },
   { href: '/quick-reference', label: 'Quick Ref', icon: '📋' },

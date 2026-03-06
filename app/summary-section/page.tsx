@@ -1,18 +1,18 @@
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
-import simpleSapData from '@/data/simpleSap.json';
+import summarySectionData from '@/data/summarySection.json';
 import styles from './page.module.css';
 
-export default function SimpleSapPage() {
-  const categories = simpleSapData.categories;
+export default function SummarySectionPage() {
+  const categories = summarySectionData.categories;
 
   return (
     <>
       <Navbar />
-      <main className={styles.simpleSapPage}>
-        <h1>SImple SAP</h1>
+      <main className={styles.summarySectionPage}>
+        <h1>Summary Section</h1>
         <p className={styles.pageDesc}>
-          S/4HANA training and configuration guides from the SImple SAP collection.
+          S/4HANA training and configuration guides from the Summary Section collection.
           These modules extend and integrate with SAP BTP. Download PDFs for offline study.
         </p>
 
